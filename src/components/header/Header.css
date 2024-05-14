@@ -1,0 +1,45 @@
+.animated-caption {
+  opacity: 0;
+  transform: translateY(50%) !important;
+  transition: opacity 0.5s, transform 0.5s !important;
+}
+
+.carousel-item.active .animated-caption {
+  opacity: 1;
+  transform: translateY(0) !important;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 43;
+  font-family: sans-serif;
+}
+
+@media (max-width: 768px) {
+  #box {
+    font-weight: normal;
+    font-family: inherit;
+  }
+
+  a.btn {
+    padding: 5px 10px;
+    height: auto;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .text-head {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .sub-text,
+  p {
+    font-size: 11px;
+  }
+
+  .bold {
+    font-weight: 600;
+    font-size: 32px;
+    font-family: inherit;
+  }
+}
