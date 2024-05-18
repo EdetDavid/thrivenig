@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   --webkit-user-select: none;
+  scroll-behavior: smooth;
   --moz-user-select: none;
   user-select: none;
 }
@@ -35,6 +36,11 @@ input[type="number"]:focus,
   background-color: #181344;
 }
 
+#nav-btn {
+  color: white;
+  transition: background-color 0.5s ease-in, color 0.5s ease;
+}
+
 @media (max-width: 768px) {
   .carousel-item img {
     width: 100%;
@@ -54,7 +60,6 @@ input[type="number"]:focus,
     background-position: center;
   }
 }
-
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -62,7 +67,7 @@ input[type="number"]:focus,
 }
 
 #preloader {
-  background-image: url("./assets/logos/preloader.png");
+  background-image: url("./assets/preloaders/preloader.png");
   height: 100vh;
   width: 100%;
   background-color: #fff;
@@ -70,8 +75,7 @@ input[type="number"]:focus,
   background-position: center;
   background-size: 200px;
   overflow: hidden;
-  padding: 0;
-  margin: 0;
+  position: fixed;
 }
 
 .rotating-image {
@@ -101,4 +105,30 @@ input[type="number"]:focus,
   to {
     transform: rotate(360deg);
   }
+}
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+[type="text"].form-control:focus,
+[type="password"].form-control:focus,
+[type="email"].form-control:focus,
+[type="tel"].form-control:focus,
+[contenteditable].form-control:focus {
+  box-shadow: none !important;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important ;
+}
+
+.btn:focus {
+  box-shadow: none !important;
 }

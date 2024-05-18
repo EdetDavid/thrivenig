@@ -1,0 +1,16 @@
+.mission-text-container {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #181344;
+  opacity: 1;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.mission-text {
+  font-size: 1.25rem;
+  padding: 20px;
+  position: relative;
+}
