@@ -7,11 +7,9 @@ import Team from "./pages/Team";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
 import "./App.css";
-
-import "./assets/js/vanilla-tilt";
 import color from "./config/colors";
 import AOS from "aos";
-//import "aos/dist/aos.css";
+import "aos/dist/aos.css";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
