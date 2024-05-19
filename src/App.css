@@ -60,6 +60,7 @@ input[type="number"]:focus,
     background-position: center;
   }
 }
+
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -67,7 +68,7 @@ input[type="number"]:focus,
 }
 
 #preloader {
-  background-image: url("./assets/preloaders/preloader.png");
+  background-image: url("./assets/logos/preloader.png");
   height: 100vh;
   width: 100%;
   background-color: #fff;
@@ -75,6 +76,8 @@ input[type="number"]:focus,
   background-position: center;
   background-size: 200px;
   overflow: hidden;
+  padding: 0;
+  margin: 0;
   position: fixed;
 }
 
@@ -105,30 +108,4 @@ input[type="number"]:focus,
   to {
     transform: rotate(360deg);
   }
-}
-textarea:focus,
-textarea.form-control:focus,
-input.form-control:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
-input[type="number"]:focus,
-[type="text"].form-control:focus,
-[type="password"].form-control:focus,
-[type="email"].form-control:focus,
-[type="tel"].form-control:focus,
-[contenteditable].form-control:focus {
-  box-shadow: none !important;
-}
-.navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: none !important ;
-}
-
-.btn:focus {
-  box-shadow: none !important;
 }

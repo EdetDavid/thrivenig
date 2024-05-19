@@ -1,26 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/about/About";
-import Whatwedo from "./pages/Whatwedo";
-import Team from "./pages/Team";
 import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/footer/Footer";
 import "./App.css";
-import color from "./config/colors";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import Home from "./pages/home/Home";
+import Group from "./pages/group/Group";
+import BoardofDirectors from "./pages/BoardofDirectors";
+import Team from "./pages/Team";
+import Whatwedo from "./pages/Whatwedo";
+
 const App = () => {
   const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-      easing: "ease-in",
-      once: false,
-    });
-  }, []);
 
   useEffect(() => {
     const preloader = document.getElementById("preloader");
@@ -30,21 +24,28 @@ const App = () => {
       setLoading(false);
     }, 2500);
   }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+    });
+  }, []);
   return (
-    <div style={{ backgroundColor: color.blue }} className="App">
+    <div className="App">
       {loading ? (
         <div id="preloader" className="rotating-image"></div>
       ) : (
         <>
           <Navbar />
-          <div className="fade">
-            <Routes>
-              <Route index exact path="/" element={<Home />} />
-              <Route exact path="/about" element={<About />} />
-              <Route exact path="/what_we_do" element={<Whatwedo />} />
-              <Route exact path="/management_team" element={<Team />} />
-            </Routes>
-          </div>
+          <Routes>
+            <Route index exact path="/" element={<Home />} />
+            <Route path="/group" element={<Group />} />
+            <Route path="/our_services" element={<Whatwedo />} />
+            <Route path="/board_of_directors" element={<BoardofDirectors />} />
+            <Route path="/management_team" element={<Team />} />
+          </Routes>
           <Footer />
         </>
       )}

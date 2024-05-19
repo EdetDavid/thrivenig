@@ -1,9 +1,9 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({ className }) => {
   return (
-    <footer className="footer p-4">
+    <footer className={`footer p-4 ${className}`}>
       <div className="container">
         <div className="row">
           <div className="col-md-3">

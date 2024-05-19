@@ -84,12 +84,25 @@ const Team = () => {
         className="p-5"
       >
         <div className="container">
-          <h2 className="text-center text-white" id="instructors">
+          <h2
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-anchor-placement="top-bottom"
+            className="text-center text-white"
+            id="instructors"
+          >
             Board of Directors
           </h2>
           <div className="row">
             {members.map((member, index) => (
-              <div key={index} id="box" className="col-sm-12 col-md-6 col-lg-3">
+              <div
+                key={index}
+                id="box"
+                className="col-sm-12 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-anchor-placement="top-bottom"
+              >
                 <div className="card bg-light">
                   <div className="card-body text-center">
                     <img

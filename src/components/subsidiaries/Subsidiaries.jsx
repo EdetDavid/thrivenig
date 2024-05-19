@@ -9,10 +9,15 @@ import "./Subsidiaries.css";
 
 const Subsidiaries = () => {
   return (
-    <div className="container ">
+    <div className="container mt-5">
       <div className="row  justify-content-center inline-flex  align-items-center mb-5 mx-auto">
         {/* card 1*/}
-        <div className="col-md-4">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-anchor-placement="top-bottom"
+          className="col-md-4"
+        >
           <Card className="custom-card">
             <div className="position-absolute icon-wrapper">
               <FaShieldAlt
@@ -41,7 +46,13 @@ const Subsidiaries = () => {
           </Card>
         </div>
         {/* card 2 */}
-        <div className="col-md-4">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-delay="500"
+          data-aos-anchor-placement="top-bottom"
+          className="col-md-4"
+        >
           <Card className="custom-card">
             <div className="position-absolute icon-wrapper">
               <ImAirplane
@@ -70,7 +81,13 @@ const Subsidiaries = () => {
           </Card>
         </div>
         {/* card 3 */}
-        <div className="col-md-4">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-delay="1000"
+          data-aos-anchor-placement="top-bottom"
+          className="col-md-4"
+        >
           <Card className="custom-card">
             <div className="position-absolute icon-wrapper ">
               <FaMoneyBillWave

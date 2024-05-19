@@ -1,6 +1,13 @@
-.box {
-  background-image: linear-gradient(to right, #cc2b5e, #753a88);
-  padding: 1px;
-  width: calc(100% - 15px);
-  margin-bottom: 2px;
+@media (max-width: 768px) {
+  #img_box {
+    width: 400px;
+    margin: 20px auto;
+    height: 250px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+  }
 }

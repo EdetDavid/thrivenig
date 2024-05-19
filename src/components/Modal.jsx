@@ -23,6 +23,7 @@ const Modal = ({ member, closeModal, membersLong }) => {
   return (
     <div className="container">
       <div
+        data-aos="zoom-in"
         className="modal fade show"
         style={{ display: "block" }}
         tabIndex="-1"
