@@ -21,7 +21,7 @@ const Modal = ({ member, closeModal, membersLong }) => {
   }, [closeModal]);
 
   return (
-    <div className="container">
+    <div className="container ">
       <div
         data-aos="zoom-in"
         className="modal fade show"
@@ -34,7 +34,7 @@ const Modal = ({ member, closeModal, membersLong }) => {
             className="modal-content overflow-auto"
             ref={modalRef}
             style={{
-              margin: "50px auto",
+              margin: "70px auto",
               padding: "50px 0",
               maxHeight: "600px",
             }}
