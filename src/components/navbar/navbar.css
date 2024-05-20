@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 6rem;
+  padding: 10px 7rem;
   background-color: transparent;
 }
 
@@ -11,7 +11,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 3px 0;
+  margin: 0;
 }
 
 .gpt3__navbar-links_logo {
@@ -95,6 +95,19 @@
   display: none;
 }
 
+@media (max-width: 968px) {
+  .gpt3__navbar {
+    padding: 10px 3rem;
+    font-size: 16px;
+  }
+}
+@media (max-width: 868px) {
+  .gpt3__navbar {
+    padding: 10px 1rem;
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 768px) {
   .gpt3__navbar-links_container {
     display: none;
@@ -104,11 +117,11 @@
     display: flex;
   }
   #nav-logo {
-    width: 70px !important;
-    height: auto !important;
+    width: 160px;
+    height: auto;
   }
   .gpt3__navbar {
-    padding: 15 !important;
+    padding: 15px;
   }
 }
 

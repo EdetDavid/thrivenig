@@ -10,7 +10,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <header className="header mt-4">
-      <Carousel interval={4000} controls={false}>
+      <Carousel interval={4000} touch={true} controls={false}>
         <Carousel.Item>
           <img
             src={img1}

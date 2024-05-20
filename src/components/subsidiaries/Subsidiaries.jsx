@@ -12,6 +12,7 @@ const Subsidiaries = () => {
     <div className="container mt-5">
       <div className="row  justify-content-center inline-flex  align-items-center mb-5 mx-auto">
         {/* card 1*/}
+
         <div
           data-aos="fade-up"
           data-aos-easing="linear"
@@ -40,11 +41,18 @@ const Subsidiaries = () => {
                 technology.
               </Card.Text>
               <Button variant="transparent">
-                More <BsArrowRight />
+                <a
+                  className="text-dark text-decoration-none p-0 m-0"
+                  href="https://thrive-insurance.vercel.app"
+                >
+                  Visit
+                </a>
+                <BsArrowRight />
               </Button>
             </Card.Body>
           </Card>
         </div>
+
         {/* card 2 */}
         <div
           data-aos="fade-up"
@@ -61,7 +69,7 @@ const Subsidiaries = () => {
                 className="card-icon" // Add class for the icon
               />
             </div>
-            <Card.Body style={{ marginTop: "8%" }}>
+            <Card.Body style={{ marginTop: "7%" }}>
               <Card.Title className=" card-title">
                 THRIVE TRAVELS AND TOURS
               </Card.Title>
@@ -75,7 +83,13 @@ const Subsidiaries = () => {
                 car hire and worldwide hotels.
               </Card.Text>
               <Button variant="transparent">
-                More <BsArrowRight />
+                <a
+                  className="text-dark text-decoration-none p-0 m-0"
+                  href="https://thrive-insurance.vercel.app"
+                >
+                  Visit
+                </a>
+                <BsArrowRight />
               </Button>
             </Card.Body>
           </Card>
@@ -109,7 +123,13 @@ const Subsidiaries = () => {
                 aperiam, quia perferendis?
               </Card.Text>
               <Button variant="transparent">
-                More <BsArrowRight />
+                <a
+                  className="text-dark text-decoration-none p-0 m-0"
+                  href="https://thrive-insurance.vercel.app"
+                >
+                  Visit
+                </a>
+                <BsArrowRight />
               </Button>
             </Card.Body>
           </Card>

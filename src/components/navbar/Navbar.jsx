@@ -17,13 +17,13 @@ const Navbar = () => {
 
   const dropdownOneLinks = [
     { label: "Our Group", url: "/group" },
-    { label: "Our People", url: "/our_people" },
+    { label: "Our Mission", url: "/group" },
     { label: "Thrive Culture", url: "/thrive_culture" },
   ];
 
   const dropdownTwoLinks = [
     { label: "Our Services", url: "/our_services" },
-    { label: "Our Competitive Edge", url: "/our_competitive_edge" },
+    { label: "Our Competitive Edge", url: "/our_services" },
   ];
 
   const dropdownThreeLinks = [
@@ -87,7 +87,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="gpt3__navbar-sign">
-        <a href="#contact" className="nav-link">
+        <a href="/#contact" className="nav-link">
           <button id="nav-btn" className="btn" type="button">
             Contact
           </button>
@@ -165,7 +165,7 @@ const Navbar = () => {
                   {link.label}
                 </NavLink>
               ))}
-              <a href="#contact" className="nav-link">
+              <a href="/#contact" className="nav-link">
                 <button className="btn btn-danger" type="button">
                   Contact
                 </button>

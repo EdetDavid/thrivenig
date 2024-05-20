@@ -4,6 +4,7 @@ import img1 from "../assets/images/team/omotayo-ajani.png";
 import img2 from "../assets/images/team/director.png";
 import img3 from "../assets/images/team/tokunbo.png";
 import img4 from "../assets/images/team/oluwatoyin.png";
+import { faContao } from "@fortawesome/free-brands-svg-icons";
 
 const BoardofDirectors = () => {
   const boardOfDirectors = [
@@ -18,7 +19,7 @@ const BoardofDirectors = () => {
     {
       imgSrc: img2,
       name: "Akinwale Adegboyega Adedoyin",
-      position: "MD |C.E.O",
+      position: "MD | C.E.O",
       description:
         "Akinwale Adegboyega Adedoyin is the chief Executive officer (CEO) of Thrive Insurance Brokers Limited. He's a seasoned insurer and banker He holds a B.Sc (Hons) degree in Accounting as well as MBA in of Nigeria (ICAN); Fellow, The Chartered Secretaries and Administrators, London (ICSA) and Fellow, Institute of Chatered Secretaries and Administrators, London (ICSA) and Fellow, The Chartered Institute of Bankers of Nigeria (CIBN). He is also an Associate member of many professional bodies amongst which are Chartered Institute of Insurance of Nigeria and The Chartered Institute of Taxation of Nigeria. He has experience in various sectors of the economy spanning over twenty-five (25) years amongs which are Ogun State Broadcasting Corporation (Gateway Radio), Abeokuta, Guinea insurance Plcc, Excel Insurance Brokers and Coral International Insurance Company Limited, BD) OFO Consulting Limited (an offshoot of Coopers and Lybrand), Intercontinental Bank Plc, Intercontinental Finance and Investment Limited and Acceess Bank Plc  among others.",
       link: "#",
@@ -42,17 +43,17 @@ const BoardofDirectors = () => {
   ];
 
   return (
-    <div className="container p-5 m-5">
+    <div className="container  p-5 m-5 mx-auto">
       <div data-aos="fade-up" className="row mb-5">
         <div className="col text-center">
           <h2 className="fw-bold text-white">Board of Directors</h2>
         </div>
       </div>
-      <div data-aos="zoom-in" className="row">
+      <div data-aos="zoom-in" className="row ">
         {boardOfDirectors.map((director, index) => (
-          <div className="col-12 mb-4" key={index}>
+          <div className="col-12 mb-4 gray-shadow" key={index}>
             <div className="card h-100">
-              <div className="row g-0 flex-row">
+              <div className="row g-0 flex-row overflow-hidden">
                 <div className="col-md-4 d-flex align-items-stretch">
                   <img
                     src={director.imgSrc}

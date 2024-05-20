@@ -19,12 +19,14 @@
   font-weight: bold;
 }
 
+
+
 #animatedTextBackground {
   display: flex;
   flex-flow: column;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 600px;
   justify-content: center;
   align-items: center;
   background: #181344;
@@ -35,6 +37,7 @@
     repeat;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   text-align: center;
   font-weight: 900;
   letter-spacing: -1px;

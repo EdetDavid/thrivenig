@@ -29,10 +29,34 @@ const Team = () => {
       position: "COO",
       description: "David ensures operational excellence across the company.",
     },
+    {
+      imgSrc: img4,
+      name: "David Green",
+      position: "COO",
+      description: "David ensures operational excellence across the company.",
+    },
+    {
+      imgSrc: img5,
+      name: "David Green",
+      position: "COO",
+      description: "David ensures operational excellence across the company.",
+    },
+    {
+      imgSrc: img4,
+      name: "David Green",
+      position: "COO",
+      description: "David ensures operational excellence across the company.",
+    },
+    {
+      imgSrc: img5,
+      name: "David Green",
+      position: "COO",
+      description: "David ensures operational excellence across the company.",
+    },
   ];
 
   return (
-    <section className="py-5">
+    <section className="m-5 p-5">
       <div className="container py-5">
         <div data-aos="fade-up" className="row mb-5 mt-5">
           <div className="col text-center">
@@ -41,10 +65,10 @@ const Team = () => {
         </div>
         <div
           data-aos="zoom-in"
-          className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"
+          className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 shadow"
         >
           {managementTeam.map((member, index) => (
-            <div className="col" key={index}>
+            <div className="col shadow mx-auto" key={index}>
               <div className="card h-100 d-flex flex-column">
                 <img
                   src={member.imgSrc}

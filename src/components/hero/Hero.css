@@ -5,11 +5,14 @@
 }
 
 .box-img {
-  width: 350px;
-  height: 100px;
+  width: 400px;
+  height: 130px;
   margin: 0 10px;
 }
 
+.box-img:hover {
+  opacity: 0.7;
+}
 @media (max-width: 768px) {
   .box-img {
     width: 170px;

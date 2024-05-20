@@ -17,6 +17,25 @@ body {
   user-select: none;
 }
 
+.blue-text {
+  color: #181344;
+}
+.red-text {
+  color: #ed1c24;
+}
+.gray-text {
+  color: #606060;
+}
+.red-shadow {
+  box-shadow: 5px 5px 10px #ed1c24;
+}
+.gray-shadow {
+  box-shadow: 5px 5px 10px #606060;
+}
+
+.blue-shadow {
+  box-shadow: 5px 5px 10px #181344;
+}
 textarea:focus,
 textarea.form-control:focus,
 input.form-control:focus,

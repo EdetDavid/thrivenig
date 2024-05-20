@@ -8,27 +8,27 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <marquee scrollamount="10" id="marquee">
-      <div className="marquee-container">
+    // <marquee scrollamount="10" id="marquee">
+    <div className="d-flex mx-auto marquee-container ">
+      <div className="d-flex">
         <div className="d-flex">
-          <div className="d-flex">
-            <a href="https://thrive-insurance.vercel.app">
-              <img className="box-img" src={TIB} alt="TIB" />
-            </a>
-          </div>
-          <div className="d-flex">
-            <a href="#TTT">
-              <img className="box-img" src={TTT} alt="TTT" />
-            </a>
-          </div>
-          <div className="d-flex">
-            <a href="#BDC">
-              <img className="box-img" src={BDC} alt="BDC" />
-            </a>
-          </div>
+          <a href="https://thrive-insurance.vercel.app">
+            <img className="box-img" src={TIB} alt="TIB" />
+          </a>
+        </div>
+        <div className="d-flex">
+          <a href="#TTT">
+            <img className="box-img" src={TTT} alt="TTT" />
+          </a>
+        </div>
+        <div className="d-flex">
+          <a href="#BDC">
+            <img className="box-img" src={BDC} alt="BDC" />
+          </a>
         </div>
       </div>
-    </marquee>
+    </div>
+    // </marquee>
   );
 };
 
