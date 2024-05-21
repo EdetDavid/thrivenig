@@ -1,0 +1,15 @@
+#contact {
+  background-image: url("../../assets/images/map.png");
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  width: 500px;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 300px;
+  }
+}
