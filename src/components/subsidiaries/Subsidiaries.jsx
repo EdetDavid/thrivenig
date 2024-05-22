@@ -115,12 +115,11 @@ const Subsidiaries = () => {
                 PARADISE FOREX BUREAU DE CHANGE
               </Card.Title>
               <Card.Text>
-                Paradise Forex BDC is an IATA Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Non, omnis incidunt vero rerum
-                eveniet quaerat dolor totam! Voluptatibus, cum culpa possimus
-                repudiandae laborum consequatur nisi asperiores quos sint vitae
-                ducimus iste autem, delectus provident tempora doloribus dolores
-                aperiam, quia perferendis?
+                Paradise Bureau De Change offers premier currency exchange
+                services, prioritizing customer satisfaction through ongoing
+                evaluation and advanced technology. Our experienced team ensures
+                secure transactions for personal and business needs, empowering
+                clients to navigate confidently.
               </Card.Text>
               <Button variant="transparent">
                 <a

@@ -121,7 +121,7 @@
     height: auto;
   }
   .gpt3__navbar {
-    padding: 15px;
+    padding: 0 15px !important;
   }
 }
 

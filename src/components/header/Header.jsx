@@ -48,7 +48,7 @@ const Header = () => {
               Take Charge of your
               <b className="bold text-info"> Life </b>
             </h2>
-            <p className="text-light sub-text w-50">
+            <p className="text-light sub-text w-75">
               Protect what matters with life, health, education, and other type
               of personal insurance for your valuable possesions.
             </p>
@@ -65,7 +65,7 @@ const Header = () => {
               Get
               <b className="bold text-success"> Covered </b>
             </h2>
-            <p className="text-white sub-text w-50">
+            <p className="text-white sub-text w-75">
               Protect what matters with life, health, education, and other type
               of personal insurance for your valuable possesions.
             </p>

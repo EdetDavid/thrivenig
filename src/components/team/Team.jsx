@@ -123,12 +123,12 @@ const Team = () => {
 
                         className="btn btn-sm btn-outline-secondary"
                       >
-                        <Link
-                          className="text-decoration-none"
-                          to="/board_of_directors"
+                        <a
+                          className="text-decoration-none text-dark"
+                          href="/board_of_directors"
                         >
                           Read More
-                        </Link>
+                        </a>
                       </button>
                       <div className="d-flex mt-2 align-items-center">
                         <a href="#home">
