@@ -1,10 +1,12 @@
 import React from "react";
-import { FaTwitter, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
-
 import img1 from "../assets/images/team/omotayo-ajani.png";
 import img2 from "../assets/images/team/director.png";
 import img3 from "../assets/images/team/tokunbo.png";
-import img4 from "../assets/images/team/oluwatoyin.png";
+import img from "../assets/images/city.jpg";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Image } from "react-bootstrap";
+
+import "./Team.css";
 
 const BoardofDirectors = () => {
   const boardOfDirectors = [
@@ -34,26 +36,13 @@ const BoardofDirectors = () => {
         instagram: "https://www.instagram.com/example2",
       },
     },
-    {
-      imgSrc: img4,
-      name: "Oluwatoyin Adewuyi",
-      position: "Executive Director",
-      description:
-        "Oluwatoyin Adewuyi holds a Bachelor of Technology degree in Transport Management from Ladoke Akintola University of Technology, Ogbomosho with specialization on Aviation and Maritime. She has a Diploma in Foundation on Travel and Tourism (IATA). She also has Master's degree in Transportation Planning and Management from the prestigious University of Lagos(UNILAG). Toyin has worked with different organizations in the Financial Institutions, Transportation and Maritime sectors ranging from Sterling Bank Plc, Bollore Africa Logistics (SDV), Lagos State Ministry of Transportation and Vehicle Licensing and Inspection Office. She has token several training in the areas of Travels, Tourisms, Airfares and Ticketing, IATA/UFTAA. She's also an expert on all GDS portal. Her interest in Transportation Management, Travels and Tourism started from the youthful years. Hence, her decision to choose a related career path as reflected in the educational background and work experience. Oluwatoyin was recently appointed as an Executive Director of Thrive Travels & Tours Limited.",
-      social: {
-        twitter: "https://twitter.com/example2",
-        linkedin: "https://www.linkedin.com/in/example2",
-        facebook: "https://www.facebook.com/example2",
-        instagram: "https://www.instagram.com/example2",
-      },
-    },
+
     {
       imgSrc: img3,
       name: "Tokunbo Abiola Olayiwola",
       position: "Executive Director",
       description:
         "Tokunbo Abiola Olayiwola holds a B.Sc. (Hons) in Geology from the federal University of Technology Minna. She has garnered over 8 years working experience with leading insurance and financial institutions. Tokunbo started her Insurance career with Mutual Benefits Insurance Plc where she played a key role in business development in the Ikoyi region. She had also handled different Marketing and Business Defvelopment functions while working with Law Union and Rock Insurance Plc. Her experiences spans  across Product Development, Sales & marketing, Business Development and Financial Management. She is an Executive Director at Thrive Insurance Brokers Limited. Tokunbo is also an Executive  Director on the board of Paradise Forex BDC Limited. She is currently at the concluding stage stage of being a Chartered Insurer (CII UK).",
-
       social: {
         twitter: "https://twitter.com/example2",
         linkedin: "https://www.linkedin.com/in/example2",
@@ -64,78 +53,73 @@ const BoardofDirectors = () => {
   ];
 
   return (
-    <div className="container mx-auto">
-      <div data-aos="fade-up" className="row my-5">
-        <div className="col text-center">
-          <h2 className="fw-bold text-white">Board of Directors</h2>
-        </div>
+    <div className="container-fluid px-0">
+      <div className="header-container">
+        <Image src={img} className="header-image h-24" />
+        <p className="header-text gray-text-shadow">Board of Directors</p>
       </div>
-      <div data-aos="zoom-in" className="row">
-        {boardOfDirectors.map((director, index) => (
-          <div
-            style={{ height: 350, fontSize: 13 }}
-            className="col-12 mb-4 shadow lead"
-            key={index}
-          >
-            <div className="card h-100">
-              <div className="row g-0 flex-row overflow-hidden">
-                <div className="col-md-4 d-flex align-items-stretch">
+      <div className="container">
+        <div className="d-flex flex-column mt-5 pt-5">
+          {boardOfDirectors.map((member, index) => (
+            <div className="card mb-5" style={{ maxWidth: "100%" }} key={index}>
+              <div className="row no-gutters ">
+                <div className="col-md-5">
                   <img
-                    src={director.imgSrc}
+                    src={member.imgSrc}
                     className="img-fluid w-100 rounded-start"
-                    alt={director.name}
+                    alt={member.name}
                     style={{ objectFit: "cover", height: "100%" }}
                   />
                 </div>
-                <div className="col-md-8 d-flex align-items-stretch">
-                  <div className="card-body d-flex flex-column">
-                    <h5 className="card-title mb-1">{director.name}</h5>
-                    <h6 className="card-subtitle mb-2 text-muted">
-                      {director.position}
+                <div className="col-md-7">
+                  <div className="card-body">
+                    <h5 className="card-title font-bold fs-2">{member.name}</h5>
+                    <h6 className="card-subtitle mb-2 fs-4 text-muted">
+                      {member.position}
                     </h6>
-                    <p className="card-text  ">{director.description}</p>
+                    <p className="card-text flex-wrap fs-6">
+                      {member.description}
+                    </p>
                     <div className="social-links ">
                       <a
-                        href={director.social.twitter}
-                        className="social-link me-2 text-info"
+                        href={member.social.twitter}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <FaTwitter />
+                        <FaTwitter className="text-info mx-1" />
                       </a>
                       <a
-                        href={director.social.linkedin}
-                        className="social-link me-2"
+                        href={member.social.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <FaLinkedin />
+                        <FaLinkedin className="text-primary mx-1" />
                       </a>
                       <a
-                        href={director.social.facebook}
-                        className="social-link me-2"
+                        href={member.social.facebook}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <FaFacebook />
+                        <FaFacebook className="text-primary mx-1" />
                       </a>
                       <a
-                        href={director.social.instagram}
-                        className="social-link me-2 text-danger"
+                        href={member.social.instagram}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <FaInstagram />
+                        <FaInstagram className="text-danger mx-1" />
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        
       </div>
     </div>
   );
 };
+
 export default BoardofDirectors;
