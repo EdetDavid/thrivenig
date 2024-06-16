@@ -9,35 +9,35 @@ import "./Services.css";
 
 const Services = () => {
   return (
-    <section class=" p-lg-5 p-md-2 p-sm-0 m-sm-auto " id="learn">
-      <div class="container">
-        <div class="row  justify-content-around align-items-center ">
+    <section className=" p-lg-5 p-md-2 p-sm-0 m-sm-auto " id="learn">
+      <div className="container">
+        <div className="row  justify-content-around align-items-center ">
           <div
             data-aos="fade-up"
             id="img_box"
-            class="col-lg-6 col-md-6 col-sm-12"
+            className="col-lg-6 col-md-6 col-sm-12"
           >
-            <img src={img_service} class=" w-100 pb-2" alt="logo" />
+            <img src={img_service} className=" w-100 pb-2" alt="logo" />
           </div>
-          <div data-aos="fade-up" class="col-lg-6 col-md-6 col-sm-12 ">
+          <div data-aos="fade-up" className="col-lg-6 col-md-6 col-sm-12 ">
             <h2 id="learn">Our Services</h2>
-            <ul class="list-group">
-              <li class="list-group-item">Risk assessment and analysis.</li>
-              <li class="list-group-item">Advisory services & solutions.</li>
-              <li class="list-group-item">
+            <ul className="list-group">
+              <li className="list-group-item">Risk assessment and analysis.</li>
+              <li className="list-group-item">Advisory services & solutions.</li>
+              <li className="list-group-item">
                 Negotiation of competitive premiums and policy terms with
                 insurers; giving clients the best coverages at optimal price.
               </li>
-              <li class="list-group-item">
+              <li className="list-group-item">
                 Ensuring prompt arrangement of insurance cover and renewals
               </li>
 
-              <li class="list-group-item">
+              <li className="list-group-item">
                 Researching policies from different insurers.
               </li>
             </ul>
 
-            <NavLink to="/our-services" class="btn btn-light mt-3 text-decoration-none text-dark ">
+            <NavLink to="/our-services" className="btn btn-dark text-decoration-none mt-3 ">
               <BsChevronRight /> Read More
             </NavLink>
           </div>
