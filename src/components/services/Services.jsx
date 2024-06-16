@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom"
 
 import img_service from "../../assets/images/img_service.png";
 
@@ -36,9 +37,9 @@ const Services = () => {
               </li>
             </ul>
 
-            <a href="#none" class="btn btn-light mt-3">
+            <NavLink to="/our-services" class="btn btn-light mt-3">
               <BsChevronRight /> Read More
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>
