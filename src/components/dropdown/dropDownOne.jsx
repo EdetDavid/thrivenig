@@ -16,7 +16,7 @@ const DropdownOne = ({ links, className, style }) => {
       if (!dropdownRef.current?.matches(":hover")) {
         setIsOpen(false);
       }
-    }, 100); // Slight delay to ensure smooth closing
+    }, 100);
   };
 
   return (

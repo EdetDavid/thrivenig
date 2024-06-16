@@ -10,6 +10,10 @@
   color: white;
 }
 
+#gutter {
+  height: 200px;
+}
+
 .header-text {
   position: absolute;
   top: 50%;
@@ -18,8 +22,6 @@
   font-size: 2rem;
   font-weight: bold;
 }
-
-
 
 #animatedTextBackground {
   display: flex;
@@ -44,4 +46,14 @@
   font-size: 9vw;
   line-height: 0.8em;
   background-size: 300%;
+}
+
+@media (max-width: 768px) {
+  #animatedTextBackground {
+    height: 400px;
+  }
+
+  #gutter {
+    height: 20px;
+  }
 }

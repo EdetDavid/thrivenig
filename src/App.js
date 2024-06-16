@@ -9,9 +9,13 @@ import "aos/dist/aos.css";
 
 import Home from "./pages/home/Home";
 import Group from "./pages/group/Group";
-import BoardofDirectors from "./pages/BoardofDirectors";
-import Team from "./pages/Team";
+import BoardofDirectors from "./pages/team/BoardofDirectors";
+import Team from "./pages/team/Team";
 import Whatwedo from "./pages/Whatwedo";
+import OtherTeamMembers from "./pages/team/otherTeam";
+import BackgroundMusic from "./components/music/BackgroundMusic";
+import musicFile from "./assets/music/wonderful-world.mp3";
+import NotFound from "./pages/notfound/NotFound";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -39,12 +43,15 @@ const App = () => {
       ) : (
         <>
           <Navbar />
+          <BackgroundMusic src={musicFile} />
           <Routes>
             <Route index exact path="/" element={<Home />} />
             <Route path="/group" element={<Group />} />
-            <Route path="/our_services" element={<Whatwedo />} />
-            <Route path="/board_of_directors" element={<BoardofDirectors />} />
-            <Route path="/management_team" element={<Team />} />
+            <Route path="/our-services" element={<Whatwedo />} />
+            <Route path="/board-of-directors" element={<BoardofDirectors />} />
+            <Route path="/management-team" element={<Team />} />
+            <Route path="/other-team-members" element={<OtherTeamMembers />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </>

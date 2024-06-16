@@ -1,0 +1,17 @@
+.career {
+  background-image: url("../../assets/images/career.jpg");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .career {
+    background-size: contain;
+  }
+
+  .career h1 {
+    position: absolute !important;
+    top: 30%;
+  }
+}

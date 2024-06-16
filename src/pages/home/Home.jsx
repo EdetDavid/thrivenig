@@ -5,7 +5,7 @@ import Hero from "../../components/hero/Hero";
 import Subsidiaries from "../../components/subsidiaries/Subsidiaries";
 import Newsletter from "../../components/Newsletter";
 import Services from "../../components/services/Services";
-// import Team from "../../components/team/Team";
+
 import Contact from "../../components/contact/Contact";
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
       <Newsletter />
       <Subsidiaries />
       <Services />
-{/*       <Team /> */}
+
       <Contact />
     </div>
   );

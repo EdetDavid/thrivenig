@@ -1,4 +1,3 @@
-// Navbar.jsx
 import React, { useEffect, useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
@@ -18,29 +17,29 @@ const Navbar = () => {
   const dropdownOneLinks = [
     { label: "Our Group", url: "/group" },
     { label: "Our Mission", url: "/group" },
-    { label: "Thrive Culture", url: "/thrive_culture" },
   ];
 
   const dropdownTwoLinks = [
-    { label: "Our Services", url: "/our_services" },
-    { label: "Our Competitive Edge", url: "/our_services" },
+    { label: "Our Services", url: "/our-services" },
+    { label: "Our Competitive Edge", url: "/our-services" },
   ];
 
   const dropdownThreeLinks = [
     {
       label: "Thrive insurance Brokers",
-      url: "https://thrive-insurance.vercel.app/",
+      url: "https://insurance.thrivenig.com/",
     },
-    { label: "Thrive Travels And Tours", url: "/thrive_travels_and_tours" },
-    { label: "Paradise Forex BDC", url: "/paradise_forex_BDC" },
+    { label: "Thrive Travels And Tours", url: "https://travels.thrivenig.com" },
+    { label: "Paradise Forex BDC", url: "https://thrivenig.com" },
   ];
 
   const dropdownFourLinks = [
     {
       label: "Board of Directors",
-      url: "/board_of_directors",
+      url: "/board-of-directors",
     },
-    { label: "Management Team", url: "/management_team" },
+    { label: "Management Team", url: "/management-team" },
+    { label: "Other Team Members", url: "/other-team-members" },
   ];
 
   useEffect(() => {
@@ -64,7 +63,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="gpt3__navbar bg-white  fixed-top">
+    <div
+      className={`gpt3__navbar bg-white pt-lg-4 pb-0 ${
+        isScrolled ? "fixed-top black-shadow" : ""
+      }`}
+    >
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
           <NavLink to="/" className="navbar-brand fs-4 fw-bold">
@@ -110,7 +113,7 @@ const Navbar = () => {
         {toggleMenu && (
           <div
             style={{ backgroundColor: colors.blue }}
-            className="gpt3__navbar-menu_container scale-up-center z-50"
+            className="gpt3__navbar-menu_container scale-up-center"
           >
             <div className="gpt3__navbar-menu_container-links">
               {/* Links for Dropdown 1 */}
@@ -119,9 +122,7 @@ const Navbar = () => {
                   key={index}
                   onClick={handleHideMobileNav}
                   to={link.url}
-                  className={`nav-link ${
-                    toggleMenu ? "text-white" : "text-dark"
-                  }`}
+                  className="nav-link text-white"
                 >
                   {link.label}
                 </NavLink>
@@ -132,9 +133,7 @@ const Navbar = () => {
                   key={index}
                   onClick={handleHideMobileNav}
                   to={link.url}
-                  className={`nav-link ${
-                    toggleMenu ? "text-white" : "text-dark"
-                  }`}
+                  className="nav-link text-white"
                 >
                   {link.label}
                 </NavLink>
@@ -145,9 +144,7 @@ const Navbar = () => {
                   key={index}
                   onClick={handleHideMobileNav}
                   to={link.url}
-                  className={`nav-link ${
-                    toggleMenu ? "text-white" : "text-dark"
-                  }`}
+                  className="nav-link text-white"
                 >
                   {link.label}
                 </NavLink>
@@ -158,9 +155,7 @@ const Navbar = () => {
                   key={index}
                   onClick={handleHideMobileNav}
                   to={link.url}
-                  className={`nav-link ${
-                    toggleMenu ? "text-white" : "text-dark"
-                  }`}
+                  className="nav-link text-white"
                 >
                   {link.label}
                 </NavLink>

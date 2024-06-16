@@ -31,6 +31,11 @@
     font-family: inherit;
   }
 
+  .slider {
+    height: 450px !important;
+    z-index: -999 !important;
+  }
+
   a.btn {
     padding: 5px 10px;
     height: auto;

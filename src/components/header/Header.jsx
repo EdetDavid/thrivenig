@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="header mt-4">
       <Carousel interval={4000} touch={true} controls={false}>
-        <Carousel.Item>
+        <Carousel.Item className="slider">
           <img
             src={img1}
             className="slide-image d-block w-100 img-fluid"
@@ -37,7 +37,7 @@ const Header = () => {
             </a>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item className="slider">
           <img
             src={img2}
             className="slide-image d-block w-100 img-fluid"
@@ -54,7 +54,7 @@ const Header = () => {
             </p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item className="slider">
           <img
             src={img3}
             className="slide-image d-block w-100 img-fluid"

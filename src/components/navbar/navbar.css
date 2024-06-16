@@ -85,6 +85,7 @@
   min-width: 210px;
   border-radius: 5px;
   box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .gpt3__navbar-menu_container p {
@@ -121,7 +122,10 @@
     height: auto;
   }
   .gpt3__navbar {
-    padding: 0 15px !important;
+    padding-left: 25px !important;
+    padding-right: 35px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 }
 

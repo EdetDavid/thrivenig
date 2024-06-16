@@ -22,10 +22,10 @@ const Group = () => {
         </div>
       </div>
 
-      <div style={{ height: 200 }} className="d-flex"></div>
+      <div id="gutter" className="d-flex"></div>
       <Container>
         {/* Row 1 */}
-        <Row data-aos="fade-right" className="my-5">
+        <Row data-aos="fade-up" className="my-5">
           <Col>
             <Card>
               <Card.Body className="border-none red-shadow p-4">
@@ -41,7 +41,7 @@ const Group = () => {
           </Col>
         </Row>
         {/* Row 2 */}
-        <Row data-aos="fade-left" className="my-5">
+        <Row data-aos="fade-up" className="my-5">
           <Col>
             <Card>
               <Card.Body className="blue-shadow  p-4">
@@ -56,7 +56,7 @@ const Group = () => {
           </Col>
         </Row>
         {/* Row 3 */}
-        <Row data-aos="fade-right" className="mt-5">
+        <Row data-aos="fade-up" className="mt-5">
           <Col>
             <Card>
               <Card.Body className="gray-shadow p-4">

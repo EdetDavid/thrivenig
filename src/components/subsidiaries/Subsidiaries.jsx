@@ -19,7 +19,7 @@ const Subsidiaries = () => {
           data-aos-anchor-placement="top-bottom"
           className="col-md-4"
         >
-          <Card className="custom-card">
+          <Card className="custom-card ">
             <div className="position-absolute icon-wrapper">
               <FaShieldAlt
                 style={{ marginTop: 7 }}
@@ -42,8 +42,8 @@ const Subsidiaries = () => {
               </Card.Text>
               <Button variant="transparent">
                 <a
-                  className="text-dark text-decoration-none p-0 m-0"
-                  href="https://thrive-insurance.vercel.app"
+                  className="text-dark  text-decoration-none p-0 m-0"
+                  href="https://insurance.thrivenig.com"
                 >
                   Visit
                 </a>
@@ -85,7 +85,7 @@ const Subsidiaries = () => {
               <Button variant="transparent">
                 <a
                   className="text-dark text-decoration-none p-0 m-0"
-                  href="https://thrive-insurance.vercel.app"
+                  href="https://travels.thrivenig.com"
                 >
                   Visit
                 </a>
@@ -122,10 +122,7 @@ const Subsidiaries = () => {
                 clients to navigate confidently.
               </Card.Text>
               <Button variant="transparent">
-                <a
-                  className="text-dark text-decoration-none p-0 m-0"
-                  href="https://thrive-insurance.vercel.app"
-                >
+                <a className="text-dark text-decoration-none p-0 m-0" href="/">
                   Visit
                 </a>
                 <BsArrowRight />
