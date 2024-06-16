@@ -37,7 +37,7 @@ const Services = () => {
               </li>
             </ul>
 
-            <NavLink to="/our-services" class="btn btn-light mt-3">
+            <NavLink to="/our-services" class="btn btn-light mt-3 nav-link ">
               <BsChevronRight /> Read More
             </NavLink>
           </div>
