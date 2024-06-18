@@ -35,13 +35,13 @@ const Newsletter = () => {
         setEmail("");
         setModalContent({
           show: true,
-          message: "You have successfully subscribed to the newsletter",
+          message: "You have successfully subscribed to the newsletter.",
           variant: "success",
         });
       } else {
         setModalContent({
           show: true,
-          message: "Failed to Subscibe or Already Exists.",
+          message: "Failed to subscribe or email already exists.",
           variant: "danger",
         });
       }
@@ -62,9 +62,9 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="">
+    <div>
       <section className="text-white">
-        <div className="">
+        <div>
           <div
             style={{ backgroundColor: colors.blue }}
             className="black-shadow opacity-100 border-dark d-flex flex-column flex-lg-row justify-content-between align-items-center p-4 p-lg-5"
@@ -77,7 +77,7 @@ const Newsletter = () => {
               className="d-flex justify-content-center flex-wrap flex-lg-nowrap align-items-center"
               onSubmit={handleSubmit}
             >
-              <div className=" me-lg-2">
+              <div className="mt-3 me-lg-2">
                 <input
                   className="border rounded-pill shadow-sm form-control"
                   type="email"
@@ -108,8 +108,7 @@ const Newsletter = () => {
         <h2>{modalContent.variant === "success" ? "Subscribed" : "Error"}</h2>
         <p>{modalContent.message}</p>
         <Button
-          style={styles.button}
-          variant={modalContent.variant}
+          style={modalButtonStyles(modalContent.variant)}
           onClick={handleCloseModal}
         >
           Close
@@ -119,13 +118,11 @@ const Newsletter = () => {
   );
 };
 
-const styles = {
-  button: {
-    backgroundColor: "#ED1C24",
-    borderColor: "#ED1C24",
-    color: "#ffffff",
-    transition: "background-color 0.3s",
-  },
-};
+const modalButtonStyles = (variant) => ({
+  backgroundColor: variant === "success" ? "#28a745" : "#dc3545",
+  borderColor: variant === "success" ? "#28a745" : "#dc3545",
+  color: "#ffffff",
+  transition: "background-color 0.3s",
+});
 
 export default Newsletter;

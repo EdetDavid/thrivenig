@@ -13,7 +13,9 @@ const Contact = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [submitting, setSubmitting] = useState(false);
-  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
+  const [modalVariant, setModalVariant] = useState("success");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -41,38 +43,43 @@ const Contact = () => {
         setEmail("");
         setPhone("");
         setMessage("");
-        setShowSuccessModal(true);
+        setModalMessage("Your message has been sent successfully.");
+        setModalVariant("success");
       } else {
-        alert("Failed to submit form");
+        setModalMessage("Failed to submit form.");
+        setModalVariant("danger");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("Failed to submit form");
+      setModalMessage("Failed to submit form.");
+      setModalVariant("danger");
     } finally {
       setSubmitting(false);
+      setShowModal(true);
     }
   };
 
   const handleCloseModal = () => {
-    setShowSuccessModal(false);
+    setShowModal(false);
   };
+
   return (
     <section
       id="contact"
-      className="text-center text-white mt-5"
+      className="text-center text-white"
       style={{ maxWidth: "100%" }}
     >
       <h1 className="mb-5 blue-text gray-text-shadow">Contact us</h1>
       <div
         style={{ backgroundColor: color.blue }}
-        className="row  mx-auto black-shadow p-4"
+        className="row mx-auto black-shadow p-4"
       >
         {/* Start */}
         <div
           data-aos="fade-up"
           data-aos-easing="linear"
           id="contactForm"
-          className="d-flex   mx-auto"
+          className="d-flex mx-auto"
         >
           <div className="col-lg-5 mb-4 mb-lg-0">
             <div className="embed-responsive embed-responsive-16by9">
@@ -102,7 +109,7 @@ const Contact = () => {
                       required
                     />
                     <label
-                      className="form-label text-white "
+                      className="form-label text-white"
                       htmlFor="formFirstName"
                     >
                       Name
@@ -185,13 +192,12 @@ const Contact = () => {
         </div>
         {/* end */}
       </div>
-      {/* Success Modal */}
-      <Modal open={showSuccessModal} onClose={handleCloseModal} center>
-        <h2>Message Sent</h2>
-        <p>Your message has been sent successfully.</p>
+      {/* Success/Error Modal */}
+      <Modal open={showModal} onClose={handleCloseModal} center>
+        <h2>{modalVariant === "success" ? "Message Sent" : "Error"}</h2>
+        <p>{modalMessage}</p>
         <Button
-          style={styles.button}
-          variant="success"
+          style={modalButtonStyles(modalVariant)}
           onClick={handleCloseModal}
         >
           Close
@@ -201,13 +207,11 @@ const Contact = () => {
   );
 };
 
-const styles = {
-  button: {
-    backgroundColor: "#ED1C24",
-    borderColor: "#ED1C24",
-    color: "#ffffff",
-    transition: "background-color 0.3s",
-  },
-};
+const modalButtonStyles = (variant) => ({
+  backgroundColor: variant === "success" ? "#28a745" : "#dc3545",
+  borderColor: variant === "success" ? "#28a745" : "#dc3545",
+  color: "#ffffff",
+  transition: "background-color 0.3s",
+});
 
 export default Contact;
