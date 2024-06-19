@@ -1,0 +1,21 @@
+.vip {
+  background-image: url("../../assets/images/vip-header.jpg");
+  height: 500px;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .travel {
+    background-size: cover;
+
+    margin-bottom: 0 !important;
+    height: 400px;
+    background-repeat: repeat-y;
+  }
+
+  .travel h1 {
+    position: absolute !important;
+    top: 45%;
+    font-size: 34px;
+  }
+}

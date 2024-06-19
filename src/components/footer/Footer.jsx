@@ -1,12 +1,13 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import "./Footer.css"; // Ensure this is imported
 
 const Footer = ({ className }) => {
   return (
-    <footer className={`footer p-4 ${className}`}>
+    <footer data-aos="fade-in" className={`footer p-4 ${className}`}>
       <div className="container">
-        <div className="row">
-          <div className="col-md-3">
+        <div className="footer-grid">
+          <div className="footer-section">
             <h5>About Us</h5>
             <ul className="list-unstyled">
               <li>About Thrive</li>
@@ -14,7 +15,7 @@ const Footer = ({ className }) => {
               <li>Privacy Policy</li>
             </ul>
           </div>
-          <div className="col-md-3">
+          <div className="footer-section">
             <h5>Customer Service</h5>
             <ul className="list-unstyled">
               <li>Contact Us</li>
@@ -22,33 +23,35 @@ const Footer = ({ className }) => {
               <li>Return Policy</li>
             </ul>
           </div>
-          <div className="col-md-3">
+          <div className="footer-section">
             <h5>Follow Us</h5>
-            <ul className="list-unstyled">
+            <ul className="list-unstyled social-icons">
               <li>
-                <a className="nav-link " href="https://www.linkedin.com">
-                  <FaLinkedin /> LinkedIn
+                <a className="nav-link" href="https://www.linkedin.com">
+                  <FaLinkedin /> <span className="icon-text">Linkedin</span>
                 </a>
               </li>
               <li>
-                <a className="nav-link " href="https://www.instagram.com">
-                  <FaInstagram /> Instagram
+                <a className="nav-link" href="https://www.instagram.com">
+                  <FaInstagram /> <span className="icon-text">Instagram</span>
                 </a>
               </li>
               <li>
-                <a className="nav-link " href="https://www.facebook.com">
-                  <FaFacebook /> Facebook
+                <a className="nav-link" href="https://www.facebook.com">
+                  <FaFacebook /> <span className="icon-text">Facebook</span>
                 </a>
               </li>
               <li>
-                <a className="nav-link " href="https://www.twitter.com">
-                  <FaTwitter /> Twitter
+                <a className="nav-link" href="https://www.twitter.com">
+                  <FaTwitter /> <span className="icon-text">Twitter</span>
                 </a>
               </li>
             </ul>
           </div>
-          <div className="col-md-3">
-            <p>&copy; {new Date().getFullYear()} Thrive Holdings Limited</p>
+          <div className="footer-section">
+            <p className="copywright">
+              &copy; {new Date().getFullYear()} Thrive Insurance Brokers Limited
+            </p>
           </div>
         </div>
       </div>

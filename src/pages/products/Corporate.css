@@ -1,0 +1,21 @@
+.corporate {
+  background-image: url("../../assets/images/corporate-header.jpg");
+  height: 600px;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .corporate {
+    background-size: cover;
+
+    margin-bottom: 0 !important;
+    height: 400px;
+    background-repeat: repeat-y;
+  }
+
+  .corporate h1 {
+    position: absolute !important;
+    top: 45%;
+    font-size: 34px;
+  }
+}

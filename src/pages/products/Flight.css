@@ -1,0 +1,6 @@
+.flight {
+  background-image: url("../../assets/images/city.jpg");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

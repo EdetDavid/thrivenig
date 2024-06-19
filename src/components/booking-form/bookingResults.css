@@ -1,0 +1,12 @@
+/* Add any custom styles here */
+.nounderline {
+  text-decoration: none;
+}
+
+.elegantstyle {
+  font-size: 14px;
+}
+
+.newstyle {
+  border: 1px solid #ccc;
+}
