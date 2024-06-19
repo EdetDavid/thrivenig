@@ -1,0 +1,45 @@
+.board {
+  background-image: url("../../assets/images/whatwedo.jpg");
+  height: 500px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 500px) {
+}
+#board {
+  width: 100% !important;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .board {
+    margin-bottom: 0 !important;
+    height: 350px;
+  }
+
+  .board h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 400px) {
+  .board {
+    margin-bottom: 0 !important;
+    height: 350px;
+  }
+
+  .board h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .board {
+    height: 1500px !important;
+  }
+
+  .display-1 {
+    font-size: 120px !important;
+  }
+}

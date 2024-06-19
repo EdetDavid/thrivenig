@@ -1,0 +1,28 @@
+:-ms-input-placeholder {
+  color: #000 !important;
+}
+
+::-webkit-input-placeholder {
+  color: #000 !important;
+}
+
+input::placeholder {
+  color: #000 !important;
+}
+
+@media (max-width: 1000px) {
+  .w-75 {
+    flex-direction: column !important;
+  }
+}
+
+#contactForm {
+  width: 75% !important;
+}
+
+@media (max-width: 768px) {
+  #contactForm {
+    width: 100% !important;
+    flex-direction: column;
+  }
+}

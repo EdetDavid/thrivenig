@@ -1,0 +1,111 @@
+.career {
+  background-image: url("../../assets/images/career.jpg");
+  height: 500px;
+  background-size: cover;
+}
+
+/* Container fluid for white background */
+.container-fluid {
+  background-color: #ffffff;
+  padding: 0;
+}
+
+#career-form {
+  width: 500px;
+  background-color: #181344;
+  padding: 10px;
+}
+
+.primary-color-text {
+  color: #181344;
+}
+
+.secondary-color-text {
+  color: #ed1c24;
+}
+
+.black-text-shadow {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.benefits-section,
+.submit-cv-section {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.benefits-section h2,
+.submit-cv-section h2 {
+  color: #181344;
+}
+
+.benefits-section ul li,
+.submit-cv-section p {
+  color: #ed1c24;
+}
+
+.career .form-control {
+  background-color: #ffffff;
+  color: #181344;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-control:focus {
+  background-color: #ffffff;
+  color: #181344;
+}
+
+.career-btn {
+  background-color: #ed1c24;
+  border-color: #ed1c24;
+  color: #ffffff;
+}
+
+.career-btn:hover {
+  background-color: #c71820;
+  border-color: #c71820;
+}
+
+.alert {
+  margin-top: 20px;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+@media (max-width: 768px) {
+  .career {
+    margin-bottom: 0 !important;
+    height: 300px;
+  }
+
+  .career h1 {
+    font-size: 38px !important;
+  }
+
+  .benefits-section h2,
+  .submit-cv-section h2 {
+    font-size: 28px !important;
+  }
+  .career p {
+    font-size: 14px;
+    width: 100% !important;
+  }
+
+  #submit-cv {
+    font-size: 15px !important;
+  }
+
+  #career-form {
+    width: 75% !important;
+  }
+}
