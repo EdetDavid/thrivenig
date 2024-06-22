@@ -43,7 +43,7 @@ const Subsidiaries = () => {
               <Button variant="transparent">
                 <a
                   className="text-dark  text-decoration-none p-0 m-0"
-                  href="https://insurance.thrivenig.com"
+                  href="https://www.insurance.thrivenig.com"
                 >
                   Visit
                 </a>
@@ -85,7 +85,7 @@ const Subsidiaries = () => {
               <Button variant="transparent">
                 <a
                   className="text-dark text-decoration-none p-0 m-0"
-                  href="https://travels.thrivenig.com"
+                  href="https://www.travels.thrivenig.com"
                 >
                   Visit
                 </a>
