@@ -40,10 +40,10 @@ const Subsidiaries = () => {
                 service through continous customer evaluation and cutting edge
                 technology.
               </Card.Text>
-              <Button variant="transparent">
+              <Button id="subsidiaries-btn" variant="transparent">
                 <a
                   className="text-dark  text-decoration-none p-0 m-0"
-                  href="https://www.insurance.thrivenig.com"
+                  href="https://insurance.thrivenig.com"
                 >
                   Visit
                 </a>
@@ -82,10 +82,10 @@ const Subsidiaries = () => {
                 made itineraries, scheduled flight, business travel, cruises,
                 car hire and worldwide hotels.
               </Card.Text>
-              <Button variant="transparent">
+              <Button id="subsidiaries-btn" variant="transparent">
                 <a
                   className="text-dark text-decoration-none p-0 m-0"
-                  href="https://www.travels.thrivenig.com"
+                  href="https://travels.thrivenig.com"
                 >
                   Visit
                 </a>
@@ -121,7 +121,7 @@ const Subsidiaries = () => {
                 secure transactions for personal and business needs, empowering
                 clients to navigate confidently.
               </Card.Text>
-              <Button variant="transparent">
+              <Button id="subsidiaries-btn" variant="transparent">
                 <a className="text-dark text-decoration-none p-0 m-0" href="/">
                   Visit
                 </a>

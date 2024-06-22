@@ -11,12 +11,12 @@ const Hero = () => {
     // <marquee scrollamount="10" id="marquee">
     <div className="d-flex mx-auto marquee-container ">
       <div className="d-flex">
-        <a href="https://www.insurance.thrivenig.com">
+        <a href="https://insurance.thrivenig.com">
           <img className="box-img" src={TIB} alt="insurance-logo" />
         </a>
       </div>
       <div className="d-flex">
-        <a href="https://www.travels.thrivenig.com">
+        <a href="https://travels.thrivenig.com">
           <img className="box-img" src={TTT} alt="travels-logo" />
         </a>
       </div>
