@@ -94,7 +94,7 @@ input[type="number"]:focus,
   width: 100%;
 }
 
-#preloader {
+/* #preloader {
   background-image: url("./assets/preloaders/preloader.png");
   height: 100vh;
   width: 100%;
@@ -106,7 +106,7 @@ input[type="number"]:focus,
   padding: 0;
   margin: 0;
   position: fixed;
-}
+} */
 
 .rotating-image {
   animation: rotate 2s linear infinite;
