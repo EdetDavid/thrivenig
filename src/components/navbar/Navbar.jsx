@@ -30,7 +30,7 @@ const Navbar = () => {
       label: "Thrive Insurance Brokers",
       url: "https://www.insurance.thrivenig.com/",
     },
-    { label: "Thrive Travels & Tours", url: "https://www.travels.thrivenig.com" },
+    { label: "Thrive Travels & Tours", url: "https://travels.thrivenig.com" },
     { label: "Paradise Forex BDC", url: "https://www.thrivenig.com" },
   ];
 
