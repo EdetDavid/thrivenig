@@ -85,7 +85,7 @@ const Subsidiaries = () => {
               <Button id="subsidiaries-btn" variant="transparent">
                 <a
                   className="text-dark text-decoration-none p-0 m-0"
-                  href="https://www.travels.thrivenig.com"
+                  href="https://travels.thrivenig.com"
                 >
                   Visit
                 </a>
