@@ -16,7 +16,7 @@ const Hero = () => {
         </a>
       </div>
       <div className="d-flex">
-        <a href="https://www.travels.thrivenig.com">
+        <a href="https://travels.thrivenig.com">
           <img className="box-img" src={TTT} alt="travels-logo" />
         </a>
       </div>
