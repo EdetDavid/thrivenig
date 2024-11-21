@@ -37,8 +37,8 @@ const Career = () => {
 
     try {
       const response = await fetch(
-        "https://thrivenig-backend.onrender.com/api/submit-cv/",
-        // "http://localhost:8000/api/submit-cv/",
+        // "https://thrivenig-backend.onrender.com/api/submit-cv/",
+        "http://localhost:9000/api/submit-cv/",
 
         {
           method: "POST",
@@ -52,7 +52,7 @@ const Career = () => {
         setFormData({
           name: "",
           email: "",
-          cv: null,
+          cv: "",
           coverLetter: "",
         });
       } else {
