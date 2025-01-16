@@ -21,8 +21,8 @@ const Navbar = () => {
   ];
 
   const dropdownTwoLinks = [
-    { label: "Our Services", url: "/our-services" },
-    { label: "Our Competitive Edge", url: "/our-services" },
+    { label: "Our Services", url: "/what-we-do" },
+    { label: "Our Competitive Edge", url: "/what-we-do" },
   ];
 
   const dropdownThreeLinks = [
