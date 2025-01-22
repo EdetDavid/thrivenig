@@ -184,6 +184,8 @@ const Contact = () => {
                   <i className="fas fa-envelope fa-2x text-primary"></i>
                   <p>
                     <small>infoinsurance@thrivenig.com</small>
+<small>infotravels@thrivenig.com</small>
+
                   </p>
                 </div>
               </div>
