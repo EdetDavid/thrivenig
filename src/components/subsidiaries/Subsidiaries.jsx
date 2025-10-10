@@ -112,10 +112,10 @@ const Subsidiaries = () => {
             </div>
             <Card.Body style={{ marginTop: "8%" }}>
               <Card.Title className=" card-title">
-                PARADISE FOREX BUREAU DE CHANGE
+              THRIVE BUREAU DE CHANGE LIMITED
               </Card.Title>
               <Card.Text>
-                Paradise Bureau De Change offers premier currency exchange
+               Thrive Bureau De Change offers premier currency exchange
                 services, prioritizing customer satisfaction through ongoing
                 evaluation and advanced technology. Our experienced team ensures
                 secure transactions for personal and business needs, empowering
