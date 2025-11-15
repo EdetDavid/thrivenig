@@ -1,0 +1,5 @@
+*** Begin Patch
+*** Update File: node_modules/@react-aria/ssr/dist/SSRProvider.mjs
+@@
+-//# sourceMappingURL=SSRProvider.mjs.map
+*** End Patch

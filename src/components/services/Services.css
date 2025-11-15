@@ -11,3 +11,23 @@
     margin: 20px auto;
   }
 }
+
+.service-list .list-group-item {
+  border: none;
+  padding: 0.8rem 0;
+  background: transparent;
+  border-bottom: 1px dashed rgba(0,0,0,0.06);
+}
+
+.service-cta {
+  background: #181344;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.55rem 1rem;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.service-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(24,19,68,0.12);
+}
