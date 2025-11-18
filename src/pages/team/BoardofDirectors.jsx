@@ -43,7 +43,7 @@ const directors = [
   {
     id: 3,
     name: "Tokunbo Abiola Adeleke",
-    title: "Non-Executive Director",
+    title: "Executive Director",
     image: Tokunbo,
     bio: "Tokunbo earned her B.Sc. in Geology from the Federal University of Technology Minna. She has over 8 years of experience in insurance and financial institutions.",
     fullBio:
