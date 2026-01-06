@@ -6,6 +6,7 @@ import { staggerContainer, fadeInUp } from "../../utils/animation";
 import AKINWALE from "../../assets/images/directors/AKINWALE.png";
 import TAYO from "../../assets/images/directors/TAYO.png";
 import Tokunbo from "../../assets/images/directors/Tokunbo.png";
+import Toyin from "../../assets/images/directors/Toyin.png";
 
 const directors = [
   {
@@ -55,6 +56,23 @@ const directors = [
       "Sustainable Business",
     ],
     order: 3,
+  },
+
+  {
+    id: 4,
+    name: "Oluwatoyin Adewuyi",
+    title: "Executive Director",
+    image: Toyin,
+    bio: "Oluwatoyin Adewuyi holds a Bachelor of Technology degree in Transport Management from Ladoke Akintola University of Technology, Ogbomosho with specialization on Aviation and Maritime.",
+    fullBio:
+      "Oluwatoyin Adewuyi holds a Bachelor of Technology degree in Transport Management from Ladoke Akintola University of Technology, Ogbomosho with specialization on Aviation and Maritime. She has Diploma in Foundation on Travel and Tourism (IATA). She also has Master's degree in Transportation Planning and Management from the prestigious University of Lagos (UNILAG). Toyin has worked with different organizations in the Financial Institutions, Transportation and Maritime sectors ranging from Sterling Bank Plc, Bollore Africa Logistics (SDV), Lagos State Ministry of Transportation and Vehicle Licensing and Inspection office. She has taken several training in the areas of Travels, Tourisms, Airfares and Ticketing, IATA/UFTAA. She's also an expert on all GDS portal. Her interest in Transportation Management, Travels and Tourism started from the youthful years. Hence, her decision to choose a related career path as reflected in the educational background and work experience. Oluwatoyin was recently appointed as an Executive Director of Thrive Travels & Tours Limited.",
+    expertise: [
+      "Entrepreneurship",
+      "Innovation",
+      "Growth Strategy",
+      "Sustainable Business",
+    ],
+    order: 4,
   },
 ];
 

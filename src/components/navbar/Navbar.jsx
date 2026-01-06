@@ -40,7 +40,7 @@ const Navbar = () => {
       url: "/board-of-directors",
     },
     { label: "Management Team", url: "/management-team" },
-    { label: "Other Team Members", url: "/other-team-members" },
+    // { label: "Other Team Members", url: "/other-team-members" },
   ];
   if (toggleMenu) {
     dropdownOneLinks.pop({ label: "Our Mission", url: "/group" });
