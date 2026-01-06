@@ -64,9 +64,9 @@ const ManagementTeam = () => {
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{member.name}</h5>
                   <h6 className="card-subtitle mb-2 text-muted">
-                    {member.position}
+                    {member.role}
                   </h6>
-                  <p className="card-text flex-grow-1">{member.description}</p>
+                  {/* <p className="card-text flex-grow-1">{member.bio}</p> */}
                 </div>
               </div>
             </div>
