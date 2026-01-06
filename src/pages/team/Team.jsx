@@ -41,27 +41,35 @@ const managementTeam = [
 
 const ManagementTeam = () => {
   return (
-    <section className="management-team-section">
-      <div className="container">
-        <header className="management-header">
-          <h2 className="management-title">Management Team</h2>
-          <p className="management-subtitle">
-            Experienced leadership driving business performance.
-          </p>
-        </header>
-
-        <div className="management-grid">
-          {managementTeam.map((m, i) => (
-            <article className="management-card" key={i} tabIndex={0}>
-              <div className="card-media">
-                <img src={m.imgSrc} alt={m.name} className="card-photo" />
+    <section className="m-5 ">
+      <div className="container ">
+        <div data-aos="fade-up" className="row mb-5 ">
+          <div className="col text-center">
+            <h2 className="fw-bold text-dark">Management Team</h2>
+          </div>
+        </div>
+        <div
+          data-aos="zoom-in"
+          className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 shadow"
+        >
+          {managementTeam.map((member, index) => (
+            <div className="col shadow mx-auto" key={index}>
+              <div className="card h-100 d-flex flex-column">
+                <img
+                  src={member.imgSrc}
+                  className="card-img-top"
+                  alt={member.name}
+                  style={{ objectFit: "cover", height: "250px" }}
+                />
+                <div className="card-body d-flex flex-column">
+                  <h5 className="card-title">{member.name}</h5>
+                  <h6 className="card-subtitle mb-2 text-muted">
+                    {member.position}
+                  </h6>
+                  <p className="card-text flex-grow-1">{member.description}</p>
+                </div>
               </div>
-              <div className="card-body">
-                <h3 className="card-name">{m.name}</h3>
-                <p className="card-role">{m.role}</p>
-                {/* <p className="card-bio">{m.bio}</p> */}
-              </div>
-            </article>
+            </div>
           ))}
         </div>
       </div>
