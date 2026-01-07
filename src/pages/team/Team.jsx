@@ -14,7 +14,7 @@ const managementTeam = [
   {
     imgSrc: male,
     name: "Opeyemi Okemakinde",
-    role: "Chief Finance Officer",
+    role: "Chief Financial Officer",
     bio: "Leads the company with a focus on innovation and long-term strategy.",
   },
 
