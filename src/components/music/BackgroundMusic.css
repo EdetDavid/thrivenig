@@ -8,8 +8,8 @@
 .control-button {
   background-color: #f8f9fa;
   border: none;
-  padding: 5px 12px;
-  border-radius: 60%;
+  padding: 9px 12px;
+  border-radius: 50%;
   margin: 5px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
@@ -21,6 +21,33 @@
 }
 
 .control-button i {
-  font-size: 16px;
-  color: #495057;
+  font-size: 20px;
+  color: #181344;
+}
+
+.control-button.playing i {
+  animation: float 2s ease-in-out infinite;
+  color: #ED1C24;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .controls {
+    bottom: 5px;
+    left: 5px;
+  }
+  .control-button {
+    padding: 3px 8px;
+  }
+  .control-button i {
+    font-size: 14px;
+  }
 }
