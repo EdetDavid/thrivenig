@@ -38,7 +38,7 @@ const Services = () => {
               <li className="list-group-item">Researching policies from different insurers.</li>
             </ul>
 
-            <a href="#none" className="btn btn-light mt-3 service-cta">
+            <a href="/what-we-do" className="btn btn-light mt-3 service-cta">
               <BsChevronRight /> Read More
             </a>
           </motion.div>

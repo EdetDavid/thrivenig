@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import BDC from "../../assets/logos/BDC.png";
 import TTT from "../../assets/logos/TTT.png";
 import TIB from "../../assets/logos/TIB.png";
 
@@ -48,11 +47,6 @@ const Hero = () => {
             <img className="box-img" src={TTT} alt="travels-logo" />
           </a>
         </div>
-        <div className="d-flex">
-          <a href="/">
-            <img className="box-img" src={BDC} alt="BDC" />
-          </a>
-        </div>
       </div>
     );
   }
@@ -74,7 +68,6 @@ const Hero = () => {
         src={TTT}
         alt="travels-logo"
       />
-      <LogoItem href="/" src={BDC} alt="BDC" />
     </motion.div>
   );
 };

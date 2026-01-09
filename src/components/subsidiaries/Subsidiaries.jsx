@@ -94,42 +94,6 @@ const Subsidiaries = () => {
             </Card.Body>
           </Card>
         </div>
-        {/* card 3 */}
-        <div
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-delay="1000"
-          data-aos-anchor-placement="top-bottom"
-          className="col-md-4"
-        >
-          <Card className="custom-card">
-            <div className="position-absolute icon-wrapper ">
-              <FaMoneyBillWave
-                color="green"
-                style={{ marginTop: 7 }}
-                className="card-icon"
-              />
-            </div>
-            <Card.Body style={{ marginTop: "8%" }}>
-              <Card.Title className=" card-title">
-              THRIVE BUREAU DE CHANGE LIMITED
-              </Card.Title>
-              <Card.Text>
-               Thrive Bureau De Change offers premier currency exchange
-                services, prioritizing customer satisfaction through ongoing
-                evaluation and advanced technology. Our experienced team ensures
-                secure transactions for personal and business needs, empowering
-                clients to navigate confidently.
-              </Card.Text>
-              <Button id="subsidiaries-btn" variant="transparent">
-                <a className="text-dark text-decoration-none p-0 m-0" href="/">
-                  Visit
-                </a>
-                <BsArrowRight />
-              </Button>
-            </Card.Body>
-          </Card>
-        </div>
       </div>
     </div>
   );

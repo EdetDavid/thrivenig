@@ -14,11 +14,12 @@
   transition: 0.5s ease;
 }
 .custom-card {
-  width: 18rem;
+  width: 20rem;
   margin: 0 10px;
   padding-top: 4%;
+  font-size: 22px !important;
   position: relative;
-  height: 470px !important;
+  height: 400px !important;
   transition: box-shadow 0.3s ease;
 }
 

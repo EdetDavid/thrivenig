@@ -48,7 +48,7 @@ const directors = [
     image: Tokunbo,
     bio: "Tokunbo earned her B.Sc. in Geology from the Federal University of Technology Minna. She has over 8 years of experience in insurance and financial institutions.",
     fullBio:
-      "Tokunbo earned her B.Sc. in Geology from the Federal University of Technology Minna. She has over 8 years of experience in insurance and financial institutions. Her career began at Mutual Benefits Insurance Plc, where she worked in business development roles. She is currently an Executive Director at Thrive Insurance Brokers Limited and also serves as a Director on the board of Paradise Forex BDC Limited. She is concluding her studies to become a chartered insurer (CII UK).",
+      "Tokunbo earned her B.Sc. in Geology from the Federal University of Technology Minna. She has over 8 years of experience in insurance and financial institutions. Her career began at Mutual Benefits Insurance Plc, where she worked in business development roles. She is currently an Executive Director at Thrive Insurance Brokers Limited. She is concluding her studies to become a chartered insurer (CII UK).",
     expertise: [
       "Entrepreneurship",
       "Innovation",
