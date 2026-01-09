@@ -23,6 +23,7 @@ const Navbar = () => {
   const dropdownTwoLinks = [
     { label: "Our Services", url: "/what-we-do" },
     { label: "Our Competitive Edge", url: "/what-we-do" },
+    { label: "Events", url: "/events" },
   ];
 
   const dropdownThreeLinks = [

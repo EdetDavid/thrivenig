@@ -9,6 +9,7 @@ import "./App.css";
 import BoardOfDirectors from "./pages/team/BoardofDirectors";
 import Team from "./pages/team/Team";
 import Career from "./pages/career/Career";
+import Events from "./pages/events/Events";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Contact from "./components/contact/Contact";
@@ -49,6 +50,7 @@ const App = () => {
             <Routes>
               <Route index exact path="/" element={<Home />} />
               <Route exact path="/career" element={<Career />} />
+              <Route exact path="/events" element={<Events />} />
               <Route exact path="/group" element={<Group />} />
               <Route exact path="/what-we-do" element={<Whatwedo />} />
 

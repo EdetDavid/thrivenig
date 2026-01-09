@@ -20,7 +20,7 @@ const Newsletter = () => {
       setSubmitting(true);
       // Replace with your API endpoint
       const response = await fetch(
-        "https://thrivenig-backend.onrender.com/api/newsletter/",
+        "https://thrivebackendapi.pythonanywhere.com/api/newsletter/",
         // "http://localhost:8000/api/newsletter/",
         {
           method: "POST",

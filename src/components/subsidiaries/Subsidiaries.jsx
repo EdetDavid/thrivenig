@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
-import { FaMoneyBillWave, FaShieldAlt } from "react-icons/fa";
+import { FaShieldAlt } from "react-icons/fa";
 import { ImAirplane } from "react-icons/im";
 
 import color from "../../config/colors";
