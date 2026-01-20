@@ -1,6 +1,7 @@
 import React from "react";
 import male from "../../assets/images/male-avatar.png";
 import female from "../../assets/images/female-avatar.png";
+import remi from "../../assets/images/team/remi.JPG";
 import "./Team.css";
 
 const managementTeam = [
@@ -32,7 +33,7 @@ const managementTeam = [
     bio: "Leads product engineering and technology strategy.",
   },
   {
-    imgSrc: female,
+    imgSrc: remi,
     name: "Oluwaremilekun Adebowale",
     role: "Head, Branding and Corporate Communications",
     bio: "Runs operations and ensures delivery excellence.",

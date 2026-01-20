@@ -31,7 +31,7 @@ const Group = () => {
               <Card.Body className="border-none red-shadow p-4">
                 <Card.Title className=" font-bold fs-3">About Us</Card.Title>
                 <Card.Text className="lead">
-                  Welcome to our company! We are dedicated to providing the best
+                  At Thrive, We are dedicated to providing the best
                   services and solutions to our customers. Our team of
                   professionals is committed to excellence and innovation,
                   ensuring that we meet and exceed your expectations.
@@ -41,7 +41,7 @@ const Group = () => {
           </Col>
         </Row>
         {/* Row 2 */}
-        <Row data-aos="fade-up" className="my-5">
+        {/* <Row data-aos="fade-up" className="my-5">
           <Col>
             <Card>
               <Card.Body className="blue-shadow  p-4">
@@ -54,7 +54,7 @@ const Group = () => {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
+        </Row> */}
         {/* Row 3 */}
         <Row data-aos="fade-up" className="mt-5">
           <Col>
