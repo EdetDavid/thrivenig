@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import { Container, Row, Col, Card, Carousel } from "react-bootstrap";
 import slide1 from "./events_photos/DJI_0027.png";
 import slide2 from "./events_photos/DJI_0033.png";
-import slide3 from "./events_photos/DJI_0040.png";
-import slide4 from "./events_photos/DJI_0044.png";
+import slide3 from "./events_photos/DJI_0044.png";
 
 import "./Events.css";
 
 const Events = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const slides = [slide1, slide2, slide3, slide4];
+  const slides = [slide1, slide2, slide3];
 
   const handleSelect = (selectedIndex) => {
     setActiveIndex(selectedIndex);
@@ -98,17 +97,7 @@ const Events = () => {
                     {/* <h3>Event Moment 3</h3> */}
                   </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100 events-carousel-img"
-                    src={slide4}
-                    alt="Slide 4"
-                  />
-
-                  <Carousel.Caption>
-                    {/* <h3>Event Moment 4</h3> */}
-                  </Carousel.Caption>
-                </Carousel.Item>
+  
               </Carousel>
               {/* Dot Indicators */}
               <div className="carousel-dots">
