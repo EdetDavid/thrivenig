@@ -2,6 +2,7 @@ import React from "react";
 import male from "../../assets/images/male-avatar.png";
 import female from "../../assets/images/female-avatar.png";
 import remi from "../../assets/images/team/remi.JPG";
+import richard from "../../assets/images/team/Richard.jpeg";
 import "./Team.css";
 
 const managementTeam = [
@@ -20,7 +21,7 @@ const managementTeam = [
   },
 
   {
-    imgSrc: male,
+    imgSrc: richard,
     name: " Richard Katchy",
     role: "Head, Internal Audit",
     bio: "Oversees financial planning and investor relations.",
