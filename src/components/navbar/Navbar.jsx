@@ -28,10 +28,10 @@ const Navbar = () => {
 
   const dropdownThreeLinks = [
     {
-      label: "Thrive Insurance Brokers",
+      label: "Thrive Insurance Brokers Limited",
       url: "https://www.insurance.thrivenig.com/",
     },
-    { label: "Thrive Travels & Tours", url: "https://www.travels.thrivenig.com" },
+    { label: "Thrive Travels & Tours Limited", url: "https://www.travels.thrivenig.com" },
   ];
 
   const dropdownFourLinks = [
