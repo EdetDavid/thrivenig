@@ -1,7 +1,7 @@
 import React from "react";
 import male from "../../assets/images/male-avatar.png";
 import female from "../../assets/images/female-avatar.png";
-import remi from "../../assets/images/team/Remi.jpg";
+import remi from "../../assets/images/team/Remi.jpg"
 import richard from "../../assets/images/team/Richard.jpeg";
 import "./Team.css";
 
