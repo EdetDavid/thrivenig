@@ -231,15 +231,11 @@
 }
 
 .director-profile-card:hover {
-  transform: translateY(-16px) rotateX(4deg) rotateY(-3deg) rotateZ(1deg) translateZ(25px);
-  box-shadow: 
-    0 30px 80px rgba(237, 28, 36, 0.2),
-    0 20px 50px rgba(237, 28, 36, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  /* Hover effect disabled */
 }
 
 .director-profile-card:hover::after {
-  opacity: 1;
+  opacity: 0;
 }
 
 /* Hexagon Accent Background */
@@ -272,7 +268,7 @@
 .profile-image-container {
   position: relative;
   width: 100%;
-  padding-bottom: 125%;
+  padding-bottom: 110%;
   overflow: hidden;
   background: linear-gradient(135deg, #181344 0%, #ed1c24 100%);
   transform-style: preserve-3d;
@@ -280,7 +276,7 @@
 }
 
 .director-profile-card:hover .profile-image-container {
-  transform: translateZ(15px);
+  /* Hover effect disabled */
 }
 
 .profile-image {
@@ -339,7 +335,7 @@
 }
 
 .director-profile-card:hover .profile-content {
-  transform: translateZ(10px);
+  /* Hover effect disabled */
 }
 
 .profile-name {
@@ -376,7 +372,7 @@
 }
 
 .director-profile-card:hover .accent-dot {
-  transform: translateZ(8px);
+  /* Hover effect disabled */
 }
 
 .accent-dot-1 {
@@ -495,7 +491,7 @@
   }
 
   .profile-image-container {
-    padding-bottom: 140%;
+    padding-bottom: 120%;
   }
 
   .profile-content {
@@ -1025,13 +1021,13 @@
 
 @media (max-width: 1024px) {
   .director-profile-card:hover {
-    transform: translateY(-12px) rotateX(3deg) rotateY(-2deg) translateZ(20px) !important;
+    /* Hover effect disabled */
   }
 }
 
 @media (max-width: 768px) {
   .director-profile-card:hover {
-    transform: translateY(-10px) rotateX(2deg) rotateY(-1deg) translateZ(15px) !important;
+    /* Hover effect disabled */
   }
 
   .director-profile-card::after {
@@ -1045,7 +1041,7 @@
 
 @media (max-width: 600px) {
   .director-profile-card:hover {
-    transform: translateY(-8px) rotateX(1deg) translateZ(10px) !important;
+    /* Hover effect disabled */
   }
 
   .director-profile-card::after {
@@ -1111,15 +1107,11 @@
 
 /* Card Hover 3D Effect */
 .card:hover {
-  transform: translateY(-16px) rotateX(4deg) rotateY(-3deg) rotateZ(1deg) translateZ(25px);
-  box-shadow: 
-    0 30px 80px rgba(237, 28, 36, 0.2),
-    0 20px 50px rgba(237, 28, 36, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  /* Hover effect disabled */
 }
 
 .card:hover::after {
-  opacity: 1;
+  opacity: 0;
 }
 
 /* Card Image 3D Effects */
@@ -1130,7 +1122,7 @@
 }
 
 .card:hover .card-img-top {
-  transform: translateZ(15px);
+  /* Hover effect disabled */
 }
 
 /* Card Body 3D Effects */
@@ -1140,7 +1132,7 @@
 }
 
 .card:hover .card-body {
-  transform: translateZ(10px);
+  /* Hover effect disabled */
 }
 
 /* Card Title and Subtitle Styling */
@@ -1172,13 +1164,13 @@
 
 @media (max-width: 1024px) {
   .card:hover {
-    transform: translateY(-12px) rotateX(3deg) rotateY(-2deg) translateZ(20px) !important;
+    /* Hover effect disabled */
   }
 }
 
 @media (max-width: 768px) {
   .card:hover {
-    transform: translateY(-10px) rotateX(2deg) rotateY(-1deg) translateZ(15px) !important;
+    /* Hover effect disabled */
   }
 
   .card::after {
@@ -1204,7 +1196,7 @@
 
 @media (max-width: 600px) {
   .card:hover {
-    transform: translateY(-8px) rotateX(1deg) translateZ(10px) !important;
+    /* Hover effect disabled */
   }
 
   .card::after {

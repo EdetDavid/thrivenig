@@ -10,8 +10,7 @@
 }
 
 .custom-card:hover .card-icon {
-  transform: scale(1.1);
-  transition: 0.5s ease;
+  /* Hover effect disabled */
 }
 .custom-card {
   width: 20rem;
