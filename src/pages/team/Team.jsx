@@ -1,7 +1,7 @@
 import React from "react";
 import male from "../../assets/images/male-avatar.png";
 import female from "../../assets/images/female-avatar.png";
-import remi from "../../assets/images/team/Remi.jpg"
+import remi from "../../assets/images/team/Remi.jpg";
 import richard from "../../assets/images/team/Richard.jpeg";
 import "./Team.css";
 
@@ -59,9 +59,9 @@ const ManagementTeam = () => {
               <div className="card h-100 d-flex flex-column">
                 <img
                   src={member.imgSrc}
-                  className="card-img-top"
+                  className="card-img-top team-img"
                   alt={member.name}
-                  style={{ objectFit: "cover", height: "250px" }}
+        
                 />
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{member.name}</h5>
