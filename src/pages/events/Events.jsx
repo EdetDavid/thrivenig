@@ -215,7 +215,7 @@ const Events = () => {
                   <iframe
                     width="100%"
                     height="315"
-                    src="https://youtube.com/shorts/MDcCpR9GMkI?si=Wny1UeBBCL2g03p3"
+                    src="https://youtube.com/embed/MDcCpR9GMkI?si=Wny1UeBBCL2g03p3"
                     title="Sample Video 4"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
