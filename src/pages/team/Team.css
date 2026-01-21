@@ -1,6 +1,6 @@
 .board {
   background-image: url("../../assets/images/whatwedo.jpg");
-  height: 500px !important;
+  height: 400px !important;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -752,11 +752,6 @@
   white-space: nowrap;
   margin-top: 10px;
 }
-
-
-
-
-
 
 .director-profile-card {
   cursor: pointer;
