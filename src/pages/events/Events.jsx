@@ -37,11 +37,10 @@ const Events = () => {
                   Our Events
                 </Card.Title>
                 <Card.Text className="events-card-text lead">
-                  At Thrive, we believe in creating meaningful experiences
-                  that bring our community together. Our events showcase the
-                  vibrancy of our initiatives, celebrating achievements and
-                  fostering connections among our team, partners, and
-                  stakeholders.
+                  At Thrive, we believe in creating meaningful experiences that
+                  bring our community together. Our events showcase the vibrancy
+                  of our initiatives, celebrating achievements and fostering
+                  connections among our team, partners, and stakeholders.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -97,7 +96,6 @@ const Events = () => {
                     {/* <h3>Event Moment 3</h3> */}
                   </Carousel.Caption>
                 </Carousel.Item>
-  
               </Carousel>
               {/* Dot Indicators */}
               <div className="carousel-dots">
@@ -205,7 +203,20 @@ const Events = () => {
                     width="100%"
                     height="315"
                     src="https://youtube.com/embed/Wg04YeYlIhQ?si=B3Q1whV2D-9AoGlo"
-                    title="Sample Video 2"
+                    title="Sample Video 3"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </Col>
+              <Col md={6}>
+                <div className="video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="315"
+                    src="https://youtube.com/shorts/MDcCpR9GMkI?si=Wny1UeBBCL2g03p3"
+                    title="Sample Video 4"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
