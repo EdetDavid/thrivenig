@@ -21,17 +21,16 @@ const managementTeam = [
   },
 
   {
-    imgSrc: richard,
-    name: " Richard Katchy",
-    role: "Head, Internal Audit",
-    bio: "Oversees financial planning and investor relations.",
-  },
-
-  {
     imgSrc: female,
     name: "Beatrice Diyan",
     role: " Head, H.R  & Admin",
     bio: "Leads product engineering and technology strategy.",
+  },
+  {
+    imgSrc: richard,
+    name: " Richard Katchy",
+    role: "Head, Internal Audit",
+    bio: "Oversees financial planning and investor relations.",
   },
   {
     imgSrc: remi,
@@ -55,13 +54,12 @@ const ManagementTeam = () => {
           className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 shadow"
         >
           {managementTeam.map((member, index) => (
-            <div className="col shadow mx-auto" key={index}>
+            <div className="col shadow" key={index}>
               <div className="card h-100 d-flex flex-column">
                 <img
                   src={member.imgSrc}
                   className="card-img-top team-img"
                   alt={member.name}
-        
                 />
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{member.name}</h5>
