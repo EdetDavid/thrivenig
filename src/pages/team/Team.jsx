@@ -3,11 +3,12 @@ import male from "../../assets/images/male-avatar.png";
 import female from "../../assets/images/female-avatar.png";
 import remi from "../../assets/images/team/Remi.jpg";
 import richard from "../../assets/images/team/Richard.jpeg";
+import akinwale from "../../assets/images/directors/AKINWALE.png";
 import "./Team.css";
 
 const managementTeam = [
   {
-    imgSrc: male,
+    imgSrc: akinwale,
     name: "Akinwale Adedoyin",
     role: "Managing Director",
     bio: "Leads the company with a focus on innovation and long-term strategy.",
