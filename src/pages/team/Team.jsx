@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, {  useMemo } from "react";
 import male from "../../assets/images/male-avatar.png";
 import female from "../../assets/images/female-avatar.png";
 import remi from "../../assets/images/team/Remi.jpg";
@@ -129,7 +129,6 @@ const ManagementTeam = () => {
   return (
     <section
       className="management-team-section"
-      role="region"
       aria-label="Management Team"
     >
       <div className="team-container">
